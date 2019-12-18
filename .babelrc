@@ -1,0 +1,15 @@
+{
+    "presets": [
+        "@vue/babel-preset-jsx",
+        ["@babel/preset-env", {
+            "modules": false,
+            "useBuiltIns": "usage",
+            "corejs": 2
+        }],
+    ],
+    "plugins": [
+        ["@babel/transform-runtime", {
+            "corejs": 2
+        }],
+    ]
+}

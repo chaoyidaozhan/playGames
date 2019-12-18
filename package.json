@@ -1,0 +1,68 @@
+{
+  "name": "playGames",
+  "version": "1.0.1",
+  "description": "安装 \r npm i smile-ui -S",
+  "main": "./dist/helloMsg.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development node ./build/dev.js",
+    "server": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.conf.js",
+    "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaoyidaozhan/smileUI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaoyidaozhan/smileUI/issues"
+  },
+  "homepage": "https://github.com/chaoyidaozhan/smileUI#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "@babel/runtime-corejs2": "^7.5.5",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
+    "@vue/babel-preset-jsx": "^1.1.0",
+    "axios": "^0.16.1",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "es6-promise": "^4.1.1",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.4.1",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "mini-css-extract-plugin": "^0.4.5",
+    "pixi.js": "^5.2.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-url": "^8.0.0",
+    "postcss-aspect-ratio-mini": "^1.0.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-px-to-viewport": "^1.1.0",
+    "postcss-viewport-units": "^0.1.6",
+    "postcss-write-svg": "^3.0.1",
+    "qrcodejs2": "^0.0.2",
+    "style-loader": "^0.19.0",
+    "url-loader": "^2.1.0",
+    "vue-loader": "^15.7.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "vue": "^2.6.10",
+    "vue-i18n": "^8.14.0",
+    "vue-router": "^3.1.1",
+    "vuex": "^3.1.1"
+  }
+}

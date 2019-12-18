@@ -53,14 +53,15 @@ export default {
         },
         toCatchDoll(){
             //调取接口
-            // let memberId = 'aaa';
-            // this.axios.get(`/${memberId}/start`).then(res => {
-                // if(res.hasPermission){
-                    this.$router.push({path:"/catchdoll", query:{sequence:'bbb'}});
-                // }else{
-                //     alert('您没有次数了,每天分享可多一次参与机会哦');
-                // }
-            // })  
+            let memberId = 'aaa';
+            this.axios.get(`/${memberId}/start`).then(res => {
+                res = JSON.parse(res.data)
+                if(res.data.hasPermission){
+                    this.$router.push({path:"/catchdoll", query:{sequence:res.data.sequence}});
+                }else{
+                    alert('您没有次数了,每天分享可多一次参与机会哦');
+                }
+            })  
         },
         toGift(){
             let activityName = 'conference_823';
